@@ -16,12 +16,14 @@ form.addEventListener("submit", (event) => {
       throw ReferenceError(
         "Division not performed. Both values are required in inputs. Try again"
       );
+    } else {
+      const calculations = dividend / divider; //decalred a variable to keep track of calulations
+
+      result.innerText = Math.floor(calculations);
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 
-  const calculations = dividend / divider; //decalred a variable to keep track of calulations
-
-  result.innerText = Math.floor(calculations); //user story 2
+  //user story 2
 });
