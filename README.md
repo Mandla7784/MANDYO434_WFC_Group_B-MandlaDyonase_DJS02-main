@@ -6,7 +6,7 @@ This exercise provides user stories in [the Gherkin syntax](https://docs.behat.o
 
 #### Project Overview
 
-The existing codebase for the Whole Number Divider meets certain user stories but falls short on others. Your task is to modify and extend the code to address all specified user stories, ensuring a robust, user-friendly application.
+The existing codebase for the Whole Number Divider meets certain user stories but falls short on others.My task was to modify and extend the code to address all specified user stories, ensuring a robust, user-friendly application.
 
 ![alt text](image.png)
 
@@ -60,11 +60,11 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ### Scenario: Providing anything that is not a number should crash the program
 
-- GIVEN that the submit button is pressed
+- when the submit button is pressed
 - WHEN ‘YOLO’ is entered into the first input
 - AND ‘+++’ is entered into the second input
-- THEN the entire screen should be replaced with “Something critical went wrong. Please reload the page
-- AND an error should be logged in the browser console that shows the call stack.
+- THEN the entire shows “Something critical went wrong. Please reload the page
+- AND an error is logged in the browser console that shows the call stack.
 
 #### Task Instructions
 
@@ -72,10 +72,3 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 2. **Implement User Stories**: Modify the code to fulfill all unresolved user stories. Pay attention to error handling and user input validation.
 3. **Error Handling**: Ensure the application handles errors gracefully, providing clear feedback to the user without crashing.
 4. **Testing**: Test your application thoroughly with various inputs to ensure it meets all the user stories.
-
-#### Submission Requirements
-
-- Updated HTML and JavaScript files.
-- Submit your project to the LMS Project Tab for DJS02
-
-This project challenges you to think critically about user input, error handling, and providing a seamless user experience. Ensure your solution is robust, user-friendly, and meets the specified requirements.
