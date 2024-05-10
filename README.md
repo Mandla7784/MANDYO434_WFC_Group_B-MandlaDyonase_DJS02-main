@@ -50,13 +50,13 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ### Scenario: An invalid division should log an error in the console
 
-- GIVEN that the submit button is pressed
+- When the submit button is pressed
 - WHEN 20 is entered into the first input
 - AND 0 is entered into the second input
-- THEN the division should not be done
-- AND the following should be displayed: “Division not performed. Invalid number provided. Try again”.
-- AND an error should be logged in the browser console that shows the call stack
-- BUT the program should not crash entirely
+- the division should will not be done
+- And the message is displaed in the DOM: “Division not performed. Invalid number provided. Try again”.
+- AND an error is logged in the browser console that shows the call stack
+- BUT the entire programm does not crash
 
 ### Scenario: Providing anything that is not a number should crash the program
 
