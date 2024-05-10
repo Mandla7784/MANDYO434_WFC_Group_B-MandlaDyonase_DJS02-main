@@ -27,10 +27,10 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ### Scenario: Dividing numbers result in a whole number
 
-- GIVEN that the submit button is pressed
-- WHEN 20 is entered into the first input
+- when submit button is pressed
+- and when the user enters 20 into the first input
 - AND 10 is entered into the second input
-- THEN 2 should be displayed at the bottom
+- the resulst 2 is displayed in the bottom
 
 <h2 style="color:#e67e22">Unresolved Stories</h2>
 
