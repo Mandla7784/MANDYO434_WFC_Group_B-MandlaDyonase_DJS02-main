@@ -43,10 +43,10 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ### Scenario: Validation when values are missing
 
-- GIVEN that the submit button is pressed
+- When that the submit button is pressed
 - WHEN either or both inputs are empty
-- THEN the divisions should not be done
-- AND the following should be displayed: “Division not performed. Both values are required in inputs. Try again”.
+- the divisions id not done
+- AND the following is displayed: “Division not performed. Both values are required in inputs. Try again”.
 
 ### Scenario: An invalid division should log an error in the console
 
