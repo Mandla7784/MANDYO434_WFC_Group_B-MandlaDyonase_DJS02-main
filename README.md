@@ -36,10 +36,10 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ### Scenario: Dividing numbers result in a decimal number
 
-- GIVEN that the submit button is pressed
+- when the submit button is pressed
 - WHEN 20 is entered into the first input
 - AND 3 is entered into the second input
-- THEN the number 6 with no decimal should be shown
+- the results is 6 no decimals
 
 ### Scenario: Validation when values are missing
 
