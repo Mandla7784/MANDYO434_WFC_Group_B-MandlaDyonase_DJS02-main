@@ -5,6 +5,7 @@ const result = document.querySelector("[data-result]");
  * @constant {number}- decalred a constat varibale for calculations
  * @throws {Error} -if values are not provided then will throw the error
  * @throws {Error}- if the values are not valid integer
+ * @divider {number} -
  *
  */
 form.addEventListener("submit", (event) => {
@@ -19,7 +20,7 @@ form.addEventListener("submit", (event) => {
       throw ReferenceError(
         "Division not performed. Both values are required in inputs. Try again"
       );
-    } else if (typeof dividend !== "number" || typeof divider !== "number") {
+    } else if (isNaN(dividend) || isNaN(divider)) {
       document.body.innerHTML = `<h1>Something critical went wrong. Please reload the page</h1>`;
       throw ReferenceError(
         "Something critical went wrong. Please reload the page"
