@@ -5,7 +5,7 @@ const result = document.querySelector("[data-result]");
  * @constant {number}- decalred a constat varibale for calculations
  * @throws {Error} -if values are not provided then will throw the error
  * @throws {Error}- if the values are not valid integer
- * @divider {number} -
+ 
  *
  */
 form.addEventListener("submit", (event) => {
