@@ -1,72 +1,30 @@
-# DJS02 Project Brief: Whole Number Divider
+# Whole Number Divider
 
-This project focuses on enhancing a web-based Whole Number Divider application. It's designed to help students apply their knowledge of error handling, guided by specific user stories. Before proceeding, familiarise yourself with the Gherkin syntax, a crucial tool for understanding user stories and requirements. Refer to the provided reading materials for a comprehensive guide. Below is the HTML and JavaScript code for a “Whole Number Divider”. At the moment it only meets two user stories (see below under “Resolved Stories”). Please ensure that it meets all user stories listed below:
+## Project Overview
 
-This exercise provides user stories in [the Gherkin syntax](https://docs.behat.org/en/v2.5/guides/1.gherkin.html). Please make sure you understand the use and meaning of this syntax before continuing. Check out this resource from [Cucumber](https://cucumber.io/docs/gherkin/reference/).
+Welcome to the Whole Number Divider project! Our aim here is to enhance a web-based application that divides whole numbers. We'll be focusing on improving error handling and meeting specific user stories.
 
-#### Project Overview
+The existing codebase for the Whole Number Divider meets certain user stories but falls short on others. Our task is to modify and extend the code to address all specified user stories, ensuring a robust and user-friendly application.
 
-The existing codebase for the Whole Number Divider meets certain user stories but falls short on others.My task was to modify and extend the code to address all specified user stories, ensuring a robust, user-friendly application.
+## Resolved Stories
 
-![alt text](image.png)
-
-#### Starter Code
-
-The provided HTML and JavaScript setup a basic form for inputting two numbers (dividend and divider) and a button to perform the calculation. The current script captures form submissions and displays the division result. However, it lacks validation, error handling, and the logic to meet all user stories.
-
-<h2 style="color:#e67e22">Resolved Stories</h2>
-
-1. **Initial State**: On page load, the message “No calculation performed” is displayed, indicating no action has been taken yet.
-2. **Whole Number Division**: Upon submitting two numbers that divide evenly (e.g., 20 divided by 10), the application correctly displays the whole number result.
+- **Initial State**: When the page loads, the message "No calculation performed" is displayed, indicating no action has been taken yet.
+- **Whole Number Division**: Upon submitting two numbers that divide evenly (e.g., 20 divided by 10), the application correctly displays the whole number result.
 
 ### Scenario: Starting program state
 
-- when the button is not pressed yet
+- When the button is not pressed yet
 - AND the code has just loaded
-- THEN “NO calculation performed” should be displayed at the bottom
+- THEN "NO calculation performed" should be displayed at the bottom
 
 ### Scenario: Dividing numbers result in a whole number
 
-- when submit button is pressed
+- When the submit button is pressed
 - and when the user enters 20 into the first input
 - AND 10 is entered into the second input
-- the resulst 2 is displayed in the bottom
+- the result 2 is displayed in the bottom
 
-<h2 style="color:#e67e22">Unresolved Stories</h2>
-
-### Scenario: Dividing numbers result in a decimal number
-
-- when the submit button is pressed
-- WHEN 20 is entered into the first input
-- AND 3 is entered into the second input
-- the results is 6 no decimals
-
-### Scenario: Validation when values are missing
-
-- When that the submit button is pressed
-- WHEN either or both inputs are empty
-- the divisions id not done
-- AND the following is displayed: “Division not performed. Both values are required in inputs. Try again”.
-
-### Scenario: An invalid division should log an error in the console
-
-- When the submit button is pressed
-- WHEN 20 is entered into the first input
-- AND 0 is entered into the second input
-- the division should will not be done
-- And the message is displaed in the DOM: “Division not performed. Invalid number provided. Try again”.
-- AND an error is logged in the browser console that shows the call stack
-- BUT the entire programm does not crash
-
-### Scenario: Providing anything that is not a number should crash the program
-
-- when the submit button is pressed
-- WHEN ‘YOLO’ is entered into the first input
-- AND ‘+++’ is entered into the second input
-- THEN the entire shows “Something critical went wrong. Please reload the page
-- AND an error is logged in the browser console that shows the call stack.
-
-#### Task Instructions
+## Task Instructions
 
 1. **Review the Starter Code**: Understand the current implementation and its limitations.
 2. **Implement User Stories**: Modify the code to fulfill all unresolved user stories. Pay attention to error handling and user input validation.
